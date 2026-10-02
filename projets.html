@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Maminomena Halinirina Sergio, développeur junior.">
+  <title>Projets | Maminomena Halinirina Sergio</title>
+
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <a class="logo" href="index.html">SG</a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="active" href="index.html">Accueil</a>
+<a class="" href="apropos.html">À propos</a>
+<a class="" href="competences.html">Compétences</a>
+<a class="" href="projets.html">Projets</a>
+<a class="" href="experience.html">Expérience</a>
+<a class="" href="contact.html">Contact</a>
+    </nav>
+<button id="themeToggle" class="theme-toggle" type="button">
+  <i class="fa-solid fa-moon"></i>
+</button>
+    
+
+  </div>
+</header>
+
+    
+
+<main class="page">
+
+<section class="content">
+  <div class="section-title">
+    <span class="eyebrow">Projets réalisés</span>
+    <h1>Mes projets</h1>
+  </div>
+
+  <div class="projects-grid">
+
+  <!-- =====================================================
+     PROJET 1 : HEYTENS BOUTIQUE
+===================================================== -->
+
+<article class="project-card">
+
+  <img
+    class="project-image"
+    src="./images/recette.JPG"
+    alt="Capture du projet Heytens Boutique"
+  >
+
+  <div class="project-body">
+
+    <h2>Cuisine & Saveurs</h2>
+
+    <div class="tags">
+
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+
+    </div>
+
+    <p>
+      Site web dédié aux recettes de cuisine avec interface moderne
+    </p>
+
+    <div class="project-actions">
+
+      <button
+        class="btn btn-yellow"
+        type="button"
+        onclick="openProjectModal('saveurs')"
+      >
+
+        <i class="fa-solid fa-eye"></i>
+
+        Voir les détails
+
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =====================================================
+     PROJET 2 : STOCKMANAGER
+===================================================== -->
+
+<article class="project-card">
+
+  <img
+    class="project-image"
+    src="./images/projet2.jpg"
+    alt="Capture du projet StockManager"
+  >
+
+  <div class="project-body">
+
+    <h2>StockManager</h2>
+
+    <div class="tags">
+
+      <span class="tag">PHP</span>
+      <span class="tag">CodeIgniter</span>
+      <span class="tag">MySQL</span>
+
+    </div>
+
+    <p>
+      Application web de gestion et de vente
+      de produits.
+    </p>
+
+    <div class="project-actions">
+
+      <button
+        class="btn btn-yellow"
+        type="button"
+        onclick="openProjectModal('stockmanager')"
+      >
+
+        <i class="fa-solid fa-eye"></i>
+
+        Voir les détails
+
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<article class="project-card">
+
+  <img
+    class="project-image"
+    src="./images/Face4.JPG"
+    alt="Capture du projet sfigp"
+  >
+
+  <div class="project-body">
+
+    <h2>SFIGP</h2>
+
+    <div class="tags">
+
+      <span class="tag">Python</span>
+      <span class="tag">React.js</span>
+      <span class="tag">Flask</span>
+      <span class="tag">ArcFace</span>
+
+    </div>
+
+    <p>
+        une application permettant
+            d'automatiser la gestion des présences
+            grâce à la reconnaissance faciale
+    </p>
+
+    <div class="project-actions">
+
+      <button
+        class="btn btn-yellow"
+        type="button"
+        onclick="openProjectModal('sfigp')"
+      >
+
+        <i class="fa-solid fa-eye"></i>
+
+        Voir les détails
+
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+<article class="project-card">
+
+  <img
+    class="project-image"
+    src="./images/madaeyes.JPG"
+    alt="Capture du projet madaeyes"
+  >
+
+  <div class="project-body">
+
+    <h2>Mada eyes</h2>
+
+    <div class="tags">
+
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">PHP</span>
+      <span class="tag">MySQL</span>
+    </div>
+
+    <p>
+       Site web dynamique développé pour la gestion
+            et la présentation de données
+    </p>
+
+    <div class="project-actions">
+
+      <button
+        class="btn btn-yellow"
+        type="button"
+        onclick="openProjectModal('madaeyes')"
+      >
+
+        <i class="fa-solid fa-eye"></i>
+
+        Voir les détails
+
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- =====================================================
+     GRAND BOX : DÉTAILS DES PROJETS
+===================================================== -->
+
+<div
+  class="project-modal"
+  id="projectModal"
+  aria-hidden="true"
+>
+
+  <div
+    class="project-modal-box"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="projectModalTitle"
+  >
+
+    <!-- BOUTON FERMER -->
+
+    <button
+  class="project-modal-close"
+  id="projectModalClose"
+  type="button"
+  onclick="closeProjectModal()"
+  aria-label="Fermer la fenêtre"
+>
+  <i class="fa-solid fa-xmark"></i>
+</button>
+
+
+    <!-- CONTENU DYNAMIQUE -->
+
+    <div id="projectModalContent">
+
+      <!-- Le contenu sera ajouté par JavaScript -->
+
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
